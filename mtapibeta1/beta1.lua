@@ -1,7 +1,4 @@
-newcclosure(
-if not getgenv().MTAPIDebug and getgenv().MTAPIMutex ~= nil then
-    return
-end
+
 local a = function()
     if is_protosmasher_caller ~= nil then
         return 0
@@ -442,4 +439,3 @@ end
 p()
 U()
 getgenv().MTAPIMutex = true
-)
